@@ -3,8 +3,7 @@ import { Heroe } from '../../services/heroes.service';
 
 @Component({
   selector: 'app-pipes',
-  templateUrl: './pipes.component.html',
-  styleUrls: ['./pipes.component.scss']
+  templateUrl: './pipes.component.html'
 })
 export class PipesComponent implements OnInit {
 

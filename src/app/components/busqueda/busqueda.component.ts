@@ -5,8 +5,7 @@ import { HeroesService, Heroe } from '../../services/heroes.service';
 
 @Component({
   selector: 'app-busqueda',
-  templateUrl: './busqueda.component.html',
-  styleUrls: ['./busqueda.component.scss']
+  templateUrl: './busqueda.component.html'
 })
 export class BusquedaComponent implements OnInit {
 
