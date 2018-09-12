@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { HeroesService } from '../../../services/heroes.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,8 +9,9 @@ import { Router } from '@angular/router';
 
 export class NavbarComponent {
 
+  public mostrarBuscador: Boolean = true;
+
   constructor(
-    private _heroesService: HeroesService,
     private router: Router
   ) { }
 

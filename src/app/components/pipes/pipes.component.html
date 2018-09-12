@@ -1,0 +1,223 @@
+<div class="container my-3" >
+  <h1 class="text-center">Pipes</h1>
+
+  <table class="table table-dark table-hover">
+    <thead class="bg-secondary">
+      <tr>
+        <th scope="col">Variable</th>
+        <th scope="col">Pipe</th>
+        <th scope="col">Resultado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{ nombre }}</th>
+        <td>uppercase</td>
+        <td>{{ nombre | uppercase }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombreRaro }}</th>
+        <td>uppercase</td>
+        <td>{{ nombreRaro | uppercase }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombre }}</th>
+        <td>lowercase</td>
+        <td>{{ nombre | lowercase }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombreRaro }}</th>
+        <td>lowercase</td>
+        <td>{{ nombreRaro | lowercase }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombre }}</th>
+        <td>titlecase</td>
+        <td>{{ nombre | titlecase }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombreRaro }}</th>
+        <td>titlecase</td>
+        <td>{{ nombreRaro | titlecase }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombre }}</th>
+        <td>slice:0:4</td>
+        <td>{{ nombre | slice:0:4 }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombre }}</th>
+        <td>slice:4</td>
+        <td>{{ nombre | slice:4 }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombre }}</th>
+        <td>slice:3:9</td>
+        <td>{{ nombre | slice:3:9 }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ numeros }}</th>
+        <td>slice:2:8</td>
+        <td>{{ numeros | slice:2:8 }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ PI }}</th>
+        <td>decima (number:'3.0-0')</td>
+        <td>{{ PI | number:'3.0-0' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ PI }}</th>
+        <td>decima (number:'0.0-0')</td>
+        <td>{{ PI | number:'0.0-0' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ PI }}</th>
+        <td>decima (number:'1.0-0')</td>
+        <td>{{ PI | number:'1.0-0' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ PI }}</th>
+        <td>decima (number:'2.0-5')</td>
+        <td>{{ PI | number:'2.0-5' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ PI }}</th>
+        <td>decima (number:'3.5-10')</td>
+        <td>{{ PI | number:'3.5-10' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ numero }}</th>
+        <td>percent</td>
+        <td>{{ numero | percent }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ numero }}</th>
+        <td>percent:'2.2-2'</td>
+        <td>{{ numero | percent:'2.2-2' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ salario }}</th>
+        <td>currency</td>
+        <td>{{ salario | currency }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ salario }}</th>
+        <td>currency:'MXN'</td>
+        <td>{{ salario | currency:'MXN' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ salario }}</th>
+        <td>currency:'MXN':'symbol'</td>
+        <td>{{ salario | currency:'MXN':'symbol' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ salario }}</th>
+        <td>currency:'MXN':'symbol-narrow':'4.0-0'</td>
+        <td>{{ salario | currency:'MXN':'symbol-narrow':'4.0-0' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ salario }}</th>
+        <td>decimal (number:'.2-2')</td>
+        <td>{{ salario | number:'.2-2' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ promesa }}</th>
+        <td>async</td>
+        <td>{{ promesa | async }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ fecha }}</th>
+        <td>date</td>
+        <td>{{ fecha | date }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ fecha }}</th>
+        <td>date:'short'</td>
+        <td>{{ fecha | date:'short' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ fecha }}</th>
+        <td>date:'medium'</td>
+        <td>{{ fecha | date:'medium' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ fecha }}</th>
+        <td>date:'long'</td>
+        <td>{{ fecha | date:'long' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ fecha }}</th>
+        <td>date:'full'</td>
+        <td>{{ fecha | date:'full' }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ fecha }}</th>
+        <td>date:"MM/dd/yy"</td>
+        <td>{{ fecha | date:"MM/dd/yy" }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ fecha }}</th>
+        <td>date:"MM/dd/yy"</td>
+        <td>{{ fecha | date:"MM/dd/yy" }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombre }}</th>
+        <td>capitalizado</td>
+        <td>{{ nombre | capitalizado }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombre }}</th>
+        <td>capitalizado:false</td>
+        <td>{{ nombre | capitalizado:false }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombreRaro }}</th>
+        <td>capitalizado</td>
+        <td>{{ nombreRaro | capitalizado }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ nombreRaro }}</th>
+        <td>capitalizado:false</td>
+        <td>{{ nombreRaro | capitalizado:false }}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{ contrasena }}</th>
+        <td class="text-center">
+          contrasena:{{ mostrarContrasena }}
+          <button
+            class="btn btn-block btn-success mt-2"
+            (click)="mostrarContrasena = !mostrarContrasena"
+          >
+            Mostrar/Ocultar
+          </button>
+        </td>
+        <td>{{ contrasena | contrasena:mostrarContrasena }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Slice *ngFor</h2>
+  <ul>
+    <li *ngFor="let numero of numeros | slice:3:6">{{ numero }}</li>
+  </ul>
+
+  <h2>JSON</h2>
+
+<p><strong>Sin etiqueta <kbd>pre</kbd></strong></p>
+<p>{{ heroe | json }}</p>
+<p>{{ heroes | json }}</p>
+
+
+<p><strong>Con etiqueta <kbd>pre</kbd></strong></p>
+<pre>
+{{ heroe | json }}
+</pre>
+<pre>
+{{ heroes | json }}
+</pre>
+
+  <h2>Pipe DOM seguro</h2>
+
+  <iframe width="560" height="315" [src]="video | domseguro" frameborder="0" allow="autoplay; encrypted-media"
+    allowfullscreen></iframe>
+</div>
