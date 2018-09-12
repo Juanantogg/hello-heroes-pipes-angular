@@ -1,0 +1,14 @@
+<div class="card mb-3 w-75 mx-auto my-5">
+  <h1 class="card-title mt-5 mb-0 text-center">{{ heroe.nombre }}</h1>
+  <div class="card-img-top position-relative">
+    <img class="w-100"  [src]="heroe.img" alt="Card image cap">
+    <img *ngIf="heroe.casa == 'Marvel'" class="position-absolute" style="width: 100px; bottom: 0; right: 16px;" src="assets/img/marvel-logo.ico" alt="Card image cap">
+    <img *ngIf="heroe.casa == 'DC'" class="position-absolute" style="width: 100px; bottom: 0; right: 16px;" src="assets/img/dc-logo.ico" alt="Card image cap">
+  </div>
+  <div class="card-body">
+    <p class="card-text">{{ heroe.bio }}</p>
+    <p class="card-text"><small class="text-muted">{{ heroe.aparicion }}</small></p>
+  </div>
+</div>
+
+<a class="btn btn-success btn-large float-right mb-5 mr-5" [routerLink]="['/heroes']">Regresar a todos los heroes</a>

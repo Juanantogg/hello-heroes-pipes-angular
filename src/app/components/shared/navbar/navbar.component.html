@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" [routerLink]="[ '/' ]">
+    <img src="assets/img/A-64.png">
+  </a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item px-3" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="[ '/hello' ]">Hello Angular</a>
+      </li>
+      <li class="nav-item px-3" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="[ '/heroes' ]">Heroes</a>
+      </li>
+      <li class="nav-item px-3" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="[ '/about' ]">About</a>
+      </li>
+    </ul>
+    <form (submit)="$event.preventDefault()" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" (keyup.enter)='buscarPersonaje(buscar.value)' #buscar placeholder="Busca tu personaje favorito" aria-label="Busca tu personaje favorito">
+      <button class="btn btn-outline-success my-2 my-sm-0" (click)='buscarPersonaje(buscar.value)'>Buscar</button>
+    </form>
+  </div>
+</nav>

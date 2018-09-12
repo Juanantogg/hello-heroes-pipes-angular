@@ -1,0 +1,29 @@
+<h1 class="text-center mt-5">Hola Angular</h1>
+<div class="py-5">
+  <div class="container d-flex">
+    <div class="col-6">
+      <h3 class="col-12">
+        *ngIf
+      </h3>
+      <hr>
+      <button (click)='mostrar = !mostrar' class="btn mb-3 btn-outline-info btn-block">Agregar/Quitar</button>
+      <div *ngIf="mostrar" class="card text-white bg-primary mb-3">
+        <div class="card-body">
+          <p class="card-title">{{ frase.autor }}</p>
+          <h5 class="card-text">{{ frase.frase }}</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <h3 class="col-12">
+        *ngFor
+      </h3>
+      <hr>
+      <ul class="list-group">
+        <li *ngFor="let personaje of personajes" class="list-group-item">{{ personaje }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
