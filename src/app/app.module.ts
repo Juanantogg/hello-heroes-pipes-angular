@@ -40,7 +40,7 @@ registerLocaleData(localeMX, 'es_MX');
     PipesComponent,
     CapitalizadoPipe,
     DomseguroPipe,
-    ContrasenaPipe
+    ContrasenaPipe,
   ],
   imports: [
     BrowserModule,
